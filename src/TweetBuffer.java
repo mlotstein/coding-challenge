@@ -4,13 +4,6 @@ import java.util.stream.IntStream;
 
 /**
  * This class maintains a list of ASCIITweets that have occurred within a certain number of seconds.
- * Adding a tweet is fairly expensive, as it requires iterating over the entire set of tweets.
- * This could easily be optimized if we can assume that the inputs are ordered, and as a result the tweets themselves
- * are ordered, in which case, we could simply do a binary search over the list to determine which ones to remove.
- * Alternately, we could not bother removing any tweets (or updating the graph) until asked to report the average
- * degree, before which time the list could be allowed to accumulate. Classic time/memory trade-off. This would also
- * make reporting the degree a much more expensive operation, as many entries in the underlying graph would need to
- * be removed.
  * Created by Max on 11/4/2015.
  */
 public class TweetBuffer {
