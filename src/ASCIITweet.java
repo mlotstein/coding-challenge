@@ -22,7 +22,7 @@ public class ASCIITweet implements Comparable<ASCIITweet>{
     final String text;
     final Date timeStamp;
     /**
-     * An alphabetically ordered
+     * An alphabetically ordered array of unique hashtags, as defined in the Twitter spec.
      */
     final String[] hashtags;
     public ASCIITweet(String text, String timeStampString) throws ParseException {
