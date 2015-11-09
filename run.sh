@@ -1,3 +1,3 @@
 #!/bin/bash
-javac *.java
-java Main
+javac src/*.java
+java -cp "lib/*" out/Main
